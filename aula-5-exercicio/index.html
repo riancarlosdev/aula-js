@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aula 5 js</title>
+</head>
+<body>
+  <h1>Olá Mundo</h1>
+
+  <script>
+
+    // fazer jogador1 digitar um numero
+
+    // fazer jogador2 digitar um numero
+
+    // se forem iguais, mostrar mensagem 'empate'
+
+    // sortear um numero entre 0 e 1
+
+    // se o numero sorteado for 0, ganha quem escolher o numero MENOR
+
+    // se o numero sorteado for 1, ganha quem escolher o numero MAIOR
+
+
+
+    let jogador1 = parseInt(prompt("Jogador1: digite um numero"));
+    let jogador2 = parseInt(prompt("Jogador2: digite um numero"));
+    if(jogador1 === jogador2){
+      alert("empate");
+    } else {
+      let resultado = parseInt(Math.random() * 2);
+        if(resultado == 0){
+          if(jogador1 < jogador2){
+            alert("jogador 1 ganhou");
+          } else {
+            alert("jogador 2 ganhou");
+          };
+      } else {
+        let resultado = parseInt(Math.random() * 2);
+        if(resultado == 1){
+          (jogador1 > jogador2)
+          alert('jogador 2 ganhou');
+        } else {
+          alert ("jogador 1 ganhou");
+        };
+      };
+    };
+  </script>
+</body>
+</html>
