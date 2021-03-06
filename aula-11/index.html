@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aula 11 js</title>
+</head>
+<body>
+  <h1>Calculadora</h1>
+
+  <button onclick="somar()">+</button>
+  <button onclick="subtrair()">-</button>
+  <button onclick="multiplicar()">*</button>
+  <button onclick="dividir()">/</button>
+  <br>
+  <br>
+  <div class="resultado"></div>
+
+  <script>
+    
+    let n1 = parseFloat(prompt("digite um numero"));
+
+    escreve();
+
+    function escreve(){
+      let resultado = document.querySelector(".resultado");
+      resultado.innerHTML = n1;
+    }
+
+    function somar(){
+      let numeroSoma = parseFloat(prompt("digite um numero a ser somado"));
+      numeroSoma = (n1 += numeroSoma);
+      escreve();
+    }
+
+    function subtrair(){
+      let numeroSubtrair = parseFloat(prompt("Digite um numero a ser Subtraido"));
+      numeroSubtrair = (n1 -= numeroSubtrair);
+      escreve();
+    }
+
+    function multiplicar(){
+      let numeroMultiplicar = parseFloat(prompt('Digite um numero a ser multiplicado'));
+      numeroMultiplicar = (n1 *= numeroMultiplicar );
+      escreve();
+    }
+
+    function dividir(){
+      let numeroDividir = parseFloat(prompt('Digite mais um numero a dividido'));
+      numeroDividir = (n1 /= numeroDividir);
+      escreve();
+    }
+  </script>
+</body>
+</html>
